@@ -1,1 +1,28 @@
-this is my firt text file
+git init 
+
+git config --global user.name 'userName'
+git config --global user.email "emailAddress"
+
+git status 
+git add fileName     git add .   
+git commit -m "commiting message"
+
+git log    ///    git log branchName  //git log --oneline
+git show <commit id>
+git ls-files           //   ls  and cat filename 
+
+git remote add origin <remote repository add>
+git remote -v
+git push origin branchName     (Need credintial)
+
+git branch
+git branch BranchName    // creating branch
+git checkout BranchName  // change to another branch
+git checkout -b BranchName  //   create and change into that branch
+git merge branchName        //mergging to branches
+git rebase branchName
+
+git archive master --format=zip -output=../name_of_file.zip
+git bundle create ../repo.bundler master
+git stash            // stash uncommitted changes
+git stash apply 
